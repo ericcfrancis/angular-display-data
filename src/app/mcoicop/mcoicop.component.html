@@ -1,0 +1,9 @@
+<h2>MCOICOP Data</h2>
+<ul>
+    <li *ngFor="let item of mcoicopData">
+        <strong>{{item.class || item.division}}</strong> -
+        {{item.desc_en}} ({{item.desc_bm}})
+        <small>Level: {{item.digits}}</small>
+    </li>
+</ul>
+<a routerLink="/msic">Back to MSIC Data</a>
