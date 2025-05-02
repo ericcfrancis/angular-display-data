@@ -12,6 +12,11 @@ export class DataService {
   getMsicData(): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}?id=msic&limit=30`);
   }
+
+  // mcoicop
+  getMcoicopData(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?id=mcoicop&limit=30`);
+  }
   
   constructor(private http: HttpClient) { }
 }
