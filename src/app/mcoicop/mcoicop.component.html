@@ -1,9 +1,28 @@
-<h2>MCOICOP Data</h2>
-<ul>
-    <li *ngFor="let item of mcoicopData">
-        <strong>{{item.class || item.division}}</strong> -
-        {{item.desc_en}} ({{item.desc_bm}})
-        <small>Level: {{item.digits}}</small>
-    </li>
-</ul>
-<a routerLink="/msic">Back to MSIC Data</a>
+<div class="container">
+    <div class="row my-3">
+        <a routerLink="/msic"> &larr; Back to msic Data</a>
+    </div>
+    <div class="row text-center">
+      <h2>MCOICOP Data</h2>
+    </div>
+    <div class="row justify-content-center">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Code</th>
+            <th>English Description</th>
+            <th>Bahasa Description</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of mcoicopData">
+            <td><strong>{{item.class || item.division}}</strong></td>
+            <td>{{item.desc_en}}</td>
+            <td>{{item.desc_bm}}</td>
+            <td><span class="badge bg-secondary">{{item.digits}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
