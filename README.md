@@ -1,6 +1,6 @@
 # Angular Display Data
 
-An Angular application that displays Malaysian government data (MSIC and MCOICOP) from official APIs in paginated tables.
+An Angular application that displays Malaysian government data (MSIC and MCOICOP) from official APIs in tables.
 
 ## Features
 - Fetches real-time data from Malaysia government APIs
